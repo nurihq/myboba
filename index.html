@@ -11,9 +11,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
 
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
@@ -30,101 +28,146 @@
 </head>
 
 <body>
+    <!-- Ambient glowing backgrounds -->
+    <div class="ambient-background">
+        <div class="glow-orb orb-rose"></div>
+        <div class="glow-orb orb-amber"></div>
+        <div class="glow-orb orb-cyan"></div>
+    </div>
 
-    <nav>
-        <div class="logo">MyBoba.</div>
-        <button id="lang-toggle" class="lang-btn" aria-label="Toggle Language">🇺🇸</button>
+    <!-- Floating Boba Pearls Animation -->
+    <div class="boba-particles" aria-hidden="true">
+        <div class="pearl p1"></div>
+        <div class="pearl p2"></div>
+        <div class="pearl p3"></div>
+        <div class="pearl p4"></div>
+        <div class="pearl p5"></div>
+        <div class="pearl p6"></div>
+    </div>
+
+    <nav class="glass-nav">
+        <div class="logo">MyBoba<span class="dot">.</span></div>
+        <button id="lang-toggle" class="lang-btn" aria-label="Toggle Language">🇺🇸 <span
+                class="lang-txt">EN</span></button>
     </nav>
 
     <main>
         <header class="hero">
-            <h1 class="hero-title">
-                <span data-ka="აღმოაჩინე" data-en="Discover">აღმოაჩინე</span>
-                <em class="serif-accent" data-ka="პრემიუმ" data-en="Premium">პრემიუმ</em><br>
-                <span data-ka="ბაბლ თი თბილისში" data-en="Boba in Tbilisi">ბაბლ თი თბილისში</span>
-            </h1>
-            <p class="hero-subtitle" data-ka="ხელნაკეთი, ნატურალური ინგრედიენტებით და უამრავი სიყვარულით."
-                data-en="Handcrafted with natural ingredients and a lot of love.">ხელნაკეთი, ნატურალური ინგრედიენტებით
-                და უამრავი სიყვარულით.</p>
+            <div class="hero-content">
+                <div class="badge-pill bounce">
+                    <span class="dot-pulse"></span>
+                    <span data-ka="ახლა მზადდება თბილისში" data-en="Now brewing in Tbilisi">ახლა მზადდება
+                        თბილისში</span>
+                </div>
+
+                <h1 class="hero-title">
+                    <span data-ka="აღმოაჩინე" data-en="Discover">აღმოაჩინე</span><br>
+                    <span class="text-gradient" data-ka="პრემიუმ ბაბლ თი" data-en="Premium Boba">პრემიუმ ბაბლ
+                        თი</span><br>
+                    <span data-ka="თბილისში" data-en="in Tbilisi">თბილისში</span>
+                </h1>
+
+                <p class="hero-subtitle" data-ka="ხელნაკეთი, ნატურალური ინგრედიენტებით და 100% სიყვარულით 🧋"
+                    data-en="Handcrafted with natural ingredients and 100% love 🧋">ხელნაკეთი, ნატურალური ინგრედიენტებით
+                    და 100% სიყვარულით 🧋</p>
+
+                <div class="wolt-pills-container">
+                    <a href="https://wolt.com/en/geo/tbilisi/restaurant/my-boba-bubble-tea" target="_blank"
+                        class="glass-btn wolt-main">
+                        <div class="btn-bg wolt-gradient"></div>
+                        <span class="icon">🛵</span>
+                        <div class="btn-text">
+                            <small data-ka="მთავარი ფილიალი" data-en="Main Branch">მთავარი ფილიალი</small>
+                            <strong data-ka="Wolt ვაკე" data-en="Wolt Vake">Wolt ვაკე</strong>
+                        </div>
+                    </a>
+                    <a href="https://wolt.com/en/geo/tbilisi/restaurant/my-boba-bubble-tea-sololaki" target="_blank"
+                        class="glass-btn wolt-sub">
+                        <div class="btn-bg glass-gradient"></div>
+                        <span class="icon">🛵</span>
+                        <div class="btn-text">
+                            <small data-ka="გამოძახება" data-en="Delivery">გამოძახება</small>
+                            <strong data-ka="Wolt სოლოლაკი" data-en="Wolt Sololaki">Wolt სოლოლაკი</strong>
+                        </div>
+                    </a>
+                    <a href="https://wolt.com/en/geo/tbilisi/restaurant/my-boba-pekini" target="_blank"
+                        class="glass-btn wolt-sub">
+                        <div class="btn-bg glass-gradient"></div>
+                        <span class="icon">🛵</span>
+                        <div class="btn-text">
+                            <small data-ka="გამოძახება" data-en="Delivery">გამოძახება</small>
+                            <strong data-ka="Wolt პეკინი" data-en="Wolt Pekini">Wolt პეკინი</strong>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="social-links-container">
+                    <a href="https://www.instagram.com/myboba_bubbletea" target="_blank"
+                        class="social-text-link insta-hover">
+                        <span class="icon">📸</span> Instagram ↗
+                    </a>
+                    <a href="https://www.facebook.com/mybobatbilisi" target="_blank" class="social-text-link fb-hover">
+                        <span class="icon">👍</span> Facebook ↗
+                    </a>
+                </div>
+            </div>
         </header>
 
-        <section class="bento-container">
-            <!-- Wolt Links in Bento Style -->
-            <a href="https://wolt.com/en/geo/tbilisi/restaurant/my-boba-bubble-tea" target="_blank"
-                class="bento-box wolt-primary">
-                <div class="bento-content">
-                    <span class="badge" data-ka="მთავარი ფილიალი" data-en="Main Branch">მთავარი ფილიალი</span>
-                    <h3 data-ka="ვაკე" data-en="Vake">ვაკე</h3>
-                    <p data-ka="შეკვეთა Wolt-ზე" data-en="Order on Wolt">შეკვეთა Wolt-ზე <span class="arrow">→</span>
-                    </p>
-                </div>
-                <div class="bento-bg-shape bobashape-1"></div>
-            </a>
-
-            <a href="https://wolt.com/en/geo/tbilisi/restaurant/my-boba-bubble-tea-sololaki" target="_blank"
-                class="bento-box wolt-secondary">
-                <div class="bento-content">
-                    <h3 data-ka="სოლოლაკი" data-en="Sololaki">სოლოლაკი</h3>
-                    <p data-ka="Wolt გამოძახება" data-en="Order Wolt">Wolt გამოძახება <span class="arrow">↗</span></p>
-                </div>
-            </a>
-
-            <a href="https://wolt.com/en/geo/tbilisi/restaurant/my-boba-pekini" target="_blank"
-                class="bento-box wolt-tertiary">
-                <div class="bento-content">
-                    <h3 data-ka="პეკინი" data-en="Pekini">პეკინი</h3>
-                    <p data-ka="Wolt გამოძახება" data-en="Order Wolt">Wolt გამოძახება <span class="arrow">↗</span></p>
-                </div>
-            </a>
-
-            <div class="bento-box social-box">
-                <a href="https://www.instagram.com/myboba_bubbletea" target="_blank" class="social-link insta">
-                    <span>Instagram</span> <span class="arrow">↗</span>
-                </a>
-                <a href="https://www.facebook.com/mybobatbilisi" target="_blank" class="social-link fb">
-                    <span>Facebook</span> <span class="arrow">↗</span>
-                </a>
-            </div>
-        </section>
-
         <section class="menu-showcase">
-            <h2 class="section-title"><em class="serif-accent" data-ka="ჩვენი" data-en="Our">ჩვენი</em> <span
-                    data-ka="რჩეული მენიუ" data-en="Signature Menu">რჩეული მენიუ</span></h2>
+            <h2 class="section-title">
+                <span data-ka="ჩვენი" data-en="Our">ჩვენი</span>
+                <span class="text-gradient" data-ka="რჩეული მენიუ" data-en="Signature Menu">რჩეული მენიუ</span>
+            </h2>
 
-            <div class="showcase-grid">
+            <div class="immersive-grid">
                 <!-- Menu Item 1 -->
                 <a href="https://wolt.com/en/geo/tbilisi/restaurant/my-boba-bubble-tea/the-tiger-boba-brown-sugar-milk-tea-itemid-32eb7c5ad01d50a316ace47c"
-                    target="_blank" class="showcase-card"
-                    style="text-decoration: none; color: inherit; display: block;">
-                    <img src="images/tiger.png" alt="Tiger Boba (Brown Sugar Milk Tea)" class="showcase-img">
-                    <div class="showcase-info">
-                        <h3 data-ka="ვეფხვის ბობა" data-en="The Tiger Boba">ვეფხვის ბობა</h3>
-                        <p class="desc" data-ka="კლასიკური ტკბილი და კრემიანი" data-en="Classic sweet & creamy">
-                            კლასიკური ტკბილი და კრემიანი</p>
+                    target="_blank" class="immersive-card">
+                    <div class="card-glow"></div>
+                    <div class="card-glass">
+                        <div class="image-popout">
+                            <img src="images/tiger.png" alt="Tiger Boba (Brown Sugar Milk Tea)">
+                        </div>
+                        <div class="card-content">
+                            <h3 data-ka="ვეფხვის ბობა" data-en="The Tiger Boba">ვეფხვის ბობა</h3>
+                            <p class="desc" data-ka="კლასიკური ტკბილი და კრემიანი" data-en="Classic sweet & creamy">
+                                კლასიკური ტკბილი და კრემიანი</p>
+                            <span class="order-tag">Order <span class="arrow">→</span></span>
+                        </div>
                     </div>
                 </a>
 
                 <!-- Menu Item 2 -->
                 <a href="https://wolt.com/en/geo/tbilisi/restaurant/my-boba-bubble-tea/itemid-560adfb3a9d8caa22670ca9c?search=match"
-                    target="_blank" class="showcase-card"
-                    style="text-decoration: none; color: inherit; display: block;">
-                    <img src="images/matcha.png" alt="Matcha Milk Tea" class="showcase-img">
-                    <div class="showcase-info">
-                        <h3 data-ka="მაჩა რძიანი ჩაი" data-en="Matcha Milk Tea">მაჩა რძიანი ჩაი</h3>
-                        <p class="desc" data-ka="პრემიუმ იაპონური მაჩა" data-en="Premium Japanese Matcha">პრემიუმ
-                            იაპონური მაჩა</p>
+                    target="_blank" class="immersive-card">
+                    <div class="card-glow"></div>
+                    <div class="card-glass">
+                        <div class="image-popout">
+                            <img src="images/matcha.png" alt="Matcha Milk Tea">
+                        </div>
+                        <div class="card-content">
+                            <h3 data-ka="მაჩა რძიანი ჩაი" data-en="Matcha Milk Tea">მაჩა რძიანი ჩაი</h3>
+                            <p class="desc" data-ka="პრემიუმ იაპონური მაჩა" data-en="Premium Japanese Matcha">პრემიუმ
+                                იაპონური მაჩა</p>
+                            <span class="order-tag">Order <span class="arrow">→</span></span>
+                        </div>
                     </div>
                 </a>
 
                 <!-- Menu Item 3 -->
                 <a href="https://wolt.com/en/geo/tbilisi/restaurant/my-boba-bubble-tea/lychee-with-strawberry-pops-itemid-873c6ec920689717416bb9d5?search=lychee+strawberry+pops"
-                    target="_blank" class="showcase-card"
-                    style="text-decoration: none; color: inherit; display: block;">
-                    <img src="images/fruit.png" alt="Lychee Strawberry Fruit Tea" class="showcase-img">
-                    <div class="showcase-info">
-                        <h3 data-ka="ლიჩი და მარწყვი" data-en="Lychee Strawberry">ლიჩი და მარწყვი</h3>
-                        <p class="desc" data-ka="გამაგრილებელი და ხილის" data-en="Refreshing and fruity">გამაგრილებელი
-                            და ხილის</p>
+                    target="_blank" class="immersive-card">
+                    <div class="card-glow"></div>
+                    <div class="card-glass">
+                        <div class="image-popout">
+                            <img src="images/fruit.png" alt="Lychee Strawberry Fruit Tea">
+                        </div>
+                        <div class="card-content">
+                            <h3 data-ka="ლიჩი და მარწყვი" data-en="Lychee Strawberry">ლიჩი და მარწყვი</h3>
+                            <p class="desc" data-ka="გამაგრილებელი და ხილის" data-en="Refreshing and fruity">
+                                გამაგრილებელი და ხილის</p>
+                            <span class="order-tag">Order <span class="arrow">→</span></span>
+                        </div>
                     </div>
                 </a>
             </div>
@@ -147,15 +190,16 @@
 
         function updateLanguage() {
             // Update button flag to show the *target* language to switch to
-            langBtn.textContent = currentLang === 'en' ? '🇬🇪' : '🇺🇸';
+            const isEn = currentLang === 'en';
+            langBtn.innerHTML = isEn ? '🇬🇪 <span class="lang-txt">KA</span>' : '🇺🇸 <span class="lang-txt">EN</span>';
 
             // Update text content
-            const elementsToUpdate = currentLang === 'en' ? elementsEn : elementsKa;
+            const elementsToUpdate = isEn ? elementsEn : elementsKa;
 
             elementsToUpdate.forEach(el => {
                 const text = el.getAttribute(`data-${currentLang}`);
                 if (text) {
-                    el.textContent = text;
+                    el.innerHTML = text; // innerHTML to preserve spans inside
                 }
             });
 
