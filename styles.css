@@ -112,6 +112,7 @@ body {
     left: 10%;
     animation-duration: 18s;
     animation-delay: 0s;
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.8) 0%, var(--accent-peach) 70%, #ff9e93 100%);
 }
 
 .p2 {
@@ -121,6 +122,7 @@ body {
     animation-duration: 22s;
     animation-delay: 4s;
     filter: blur(1px);
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.8) 0%, var(--accent-mint) 70%, #9bd1be 100%);
 }
 
 .p3 {
@@ -129,6 +131,7 @@ body {
     left: 35%;
     animation-duration: 15s;
     animation-delay: 7s;
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.8) 0%, var(--accent-yellow) 70%, #ffeaa7 100%);
 }
 
 .p4 {
@@ -139,6 +142,7 @@ body {
     animation-delay: 1s;
     filter: blur(3px);
     opacity: 0.6;
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.8) 0%, var(--accent-blue) 70%, #82adff 100%);
 }
 
 .p5 {
@@ -147,6 +151,7 @@ body {
     left: 20%;
     animation-duration: 19s;
     animation-delay: 11s;
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.8) 0%, var(--accent-rose) 70%, #fd7ce1 100%);
 }
 
 .p6 {
@@ -155,6 +160,7 @@ body {
     left: 75%;
     animation-duration: 16s;
     animation-delay: 9s;
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.8) 0%, #e4c1f9 70%, #c499e0 100%);
 }
 
 @keyframes floatUp {
